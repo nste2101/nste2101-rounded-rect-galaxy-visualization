@@ -12,6 +12,6 @@
     <params>
         <param type="dataset" var_name_in_template="hda" required="true">dataset_id</param>
     </params>
-    <template>Rounded Rect.mako</template>
+    <template>rounded_rect.mako</template>
     <render_target>_blank</render_target>
 </visualization>
