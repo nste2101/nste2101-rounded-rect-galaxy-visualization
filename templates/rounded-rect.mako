@@ -7,7 +7,7 @@ var mouse = [480, 250],
     count = 0;
 var svg = d3.select("body").append("svg")
     .attr("width", 960)
-    .attr("height", 500);
+    .attr("height", 1000);
 var g = svg.selectAll("g")
     .data(d3.range(25))
   .enter().append("g")
