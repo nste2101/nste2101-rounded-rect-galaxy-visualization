@@ -1,17 +1,31 @@
-<xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE visualization SYSTEM "../../visualization.dtd">
 <visualization name="Rounded Rect">
     <description>Inspired by this Paper.js example, this demonstrates animated rounded rectangles (svg:rect elements with "rx" and "ry" attributes). The data associated with each rectangle is its center position and rotation angle in degrees. Each tick of the animation, the rectangles drift towards the mouse location and rotate slightly. Built with D3.js using SVG.</description>
     <data_sources>
         <data_source>
-           <model_class>HistoryDatasetAssociation</model_class>
-	   <test test_attr="ext" result_type="datatype">txt</test>
-           <to_param param_attr="id">dataset_id</to_param>
+            <model_class>HistoryDatasetAssociation</model_class>
+            <test test_attr="ext" result_type="datatype">json</test>
+            <to_param param_attr="id">dataset_id</to_param>
+        </data_source>
+        <data_source>
+            <model_class>HistoryDatasetAssociation</model_class>
+            <test test_attr="ext" result_type="datatype">txt</test>
+            <to_param param_attr="id">dataset_id</to_param>
+        </data_source>
+        <data_source>
+            <model_class>HistoryDatasetAssociation</model_class>
+            <test test_attr="ext" result_type="datatype">graph_dot</test>
+            <to_param param_attr="id">dataset_id</to_param>
+        </data_source>
+        <data_source>
+            <model_class>HistoryDatasetAssociation</model_class>
+            <test type="has_dataprovider" test_attr="datatype">node-edge</test>
+            <to_param param_attr="id">dataset_id</to_param>
         </data_source>
     </data_sources>
     <params>
         <param type="dataset" var_name_in_template="hda" required="true">dataset_id</param>
     </params>
-    <template>rounded_rect.mako</template>
-    <render_target>_blank</render_target>
+    <template>rounded-rect.mako</template>
 </visualization>
