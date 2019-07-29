@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE visualization SYSTEM "../../visualization.dtd">
-<visualization name="Graph Visualization">
-    <description>Cytoscape-based graph visualization plugin.</description>
+<visualization name="Rounded Rect">
+    <description>Inspired by this Paper.js example, this demonstrates animated rounded rectangles (svg:rect elements with "rx" and "ry" attributes). The data associated with each rectangle is its center position and rotation angle in degrees. Each tick of the animation, the rectangles drift towards the mouse location and rotate slightly. Built with D3.js using SVG.</description>
     <data_sources>
         <data_source>
             <model_class>HistoryDatasetAssociation</model_class>
